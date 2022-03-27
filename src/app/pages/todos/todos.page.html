@@ -1,0 +1,13 @@
+<div class="value">
+    <input type="text" [(ngModel)]="nameTask"><button (click)="addTask(nameTask)">ADD</button>
+
+    <tr *ngFor="let item of listTask">
+        <ng-container *ngIf="!item.completed">
+            <td>{{ item.title }}</td>
+            <button class="completed" (click)="completedTask(this.item.id)">
+          DONE
+    </button>
+        </ng-container>
+    </tr>
+
+</div>

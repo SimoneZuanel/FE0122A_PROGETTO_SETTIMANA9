@@ -1,0 +1,11 @@
+div {
+    position: absolute;
+    right: 460px;
+    tr {
+        display: flex;
+        flex-wrap: wrap;
+        td {
+            margin: 5px;
+        }
+    }
+}
